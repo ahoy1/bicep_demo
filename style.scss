@@ -39,10 +39,22 @@ h1{
   background-image: -webkit-linear-gradient(left, $yellow, $red);
   color: $orange;
   line-height: 1.2em;
+  margin:0;
+
+  &:before {
+    display: block;
+    content:'';
+    background:$white;
+    opacity:0.5;
+    position:absolute;
+    top:0;
+    height:0.7em;
+    width:100%;
+  }
 }
 
 h2{
-  font-size:26px;
+  font-size:1.75em;
 }
 
 p, li {
