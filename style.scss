@@ -61,12 +61,8 @@ p, li {
   font-size:18px;
   text-align:left;
 }
-.flex {
-  border-bottom:5px solid $silver;
-  padding-bottom:25px;
-  margin-bottom:25px;
-}
-.flex > div{
+
+.flex.demo-style > div{
   padding:10px;
   font-size:18px;
   font-weight:bold;
@@ -85,4 +81,18 @@ p, li {
   &.noborder{
     border:0 none;
   }
+}
+
+//small change to prism style
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+    margin-top: 0;
+}
+
+.markup-block-header {
+    background: #EB7700;
+    background-image: -webkit-linear-gradient(right,$yellow,$orange);
+    padding: 5px 15px;
+    font-size: 18px;
+    color: #fff;
 }
