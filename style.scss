@@ -29,11 +29,11 @@ body {
 }
 
 h1, h2 {
-  text-align:center;
+  //text-align:center;
 }
 
 h1{
-  font-size: 6.0em;
+  font-size: 5.0em;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: -webkit-linear-gradient(left, $yellow, $red);
@@ -62,7 +62,11 @@ p, li {
   text-align:left;
 }
 
-.flex.demo-style > div{
+p {
+  margin:20px 0;
+}
+
+.demo-style > div{
   padding:10px;
   font-size:18px;
   font-weight:bold;
@@ -83,16 +87,21 @@ p, li {
   }
 }
 
+section {
+  margin-bottom:30px;
+}
+
 //small change to prism style
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
     margin-top: 0;
 }
 
-.markup-block-header {
+.gradient-header {
     background: #EB7700;
     background-image: -webkit-linear-gradient(right,$yellow,$orange);
     padding: 5px 15px;
+    margin:20px 0 0 0;
     font-size: 18px;
     color: #fff;
 }

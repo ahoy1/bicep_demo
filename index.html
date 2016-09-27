@@ -1,170 +1,200 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>bicep - flexbox layout library</title>
-    <meta name="author" content="name">
-    <meta name="description" content="description here">
-    <meta name="keywords" content="css,flexbox, display flex, css framework">
-    <link rel="shortcut icon" href="favicon.ico" type="">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway' type='text/css'>
-    <link rel="stylesheet" href="prism.css">
-    <link rel="stylesheet" href="bicep.min.css" type="text/css">
-    <link rel="stylesheet" href="style.min.css">
-  </head>
-  <body>
 
-    <h1>bicep - flex your layout</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>bicep - flexbox layout library</title>
+  <meta name="author" content="name">
+  <meta name="description" content="description here">
+  <meta name="keywords" content="css,flexbox, display flex, css framework">
+  <link rel="shortcut icon" href="favicon.ico" type="">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway' type='text/css'>
+  <link rel="stylesheet" href="prism.css">
+  <link rel="stylesheet" href="bicep.min.css" type="text/css">
+  <link rel="stylesheet" href="style.min.css">
+</head>
 
-    <div class="container flex">
-      <div class="item-xs-12 ">
+<body>
+  <section class="demo-section-hero container">
+    <div class="headerrow">
+      <div class="col-xs-12">
+        <h1>bicep - row your layout</h1>
         <p>Lightweight responsive grid layout, written with flexbox.</p>
+      </div>
+    </div>
+  </section>
+  <section class="demo-section-standard container">
+    <div class="row flex-justify-center">
+      <div class="col-xs-12">
         <h2>Standard</h2>
         <p>Looks and behaves similar to float-based layouts. If you've used a float-based layout framework (like boostrap or foundation) this will feel very familiar.</p>
       </div>
     </div>
-    <div class="container-fluid flex">
-      <div class="item-xs-12 ">
-        <div class="markup-block-header">
-          Usage
+    <div class="row demo-style">
+      <div class="col-md-3">.col-md-3</div>
+      <div class="col-md-6">.col-md-6</div>
+      <div class="col-md-3">.col-md-3</div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="gradient-header">
+          Markup
         </div>
         <pre class="language-markup">
-          <code class="language-markup">
-              &lt;div class="container flex"&gt;
-                &lt;div class="item-m-4"&gt;&lt;/div&gt;
-                &lt;div class="item-m-4"&gt;&lt;/div&gt;
-                &lt;div class="item-m-4"&gt;&lt;/div&gt;
-              &lt;/div&gt;
-          </code>
-          </pre>
+            <code class="language-markup">
+                &lt;div class="row"&gt;
+                  &lt;div class="col-md-3"&gt;&lt;/div&gt;
+                  &lt;div class="col-md-6"&gt;&lt;/div&gt;
+                  &lt;div class="col-md-3"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            </code>
+            </pre>
+      </div>
+      <div class="col-xs-12">
+        <p>*Note that you can use <code>.container</code> and <code>.flex</code> independently of one another as needed. Neither depends on the other.</p>
       </div>
     </div>
+  </section>
 
-    <div class="container flex demo-style">
-      <div class="item-s-12">.item-s-12</div>
-      <div class="item-s-11">.item-s-11</div>
-      <div class="item-s-1">.item-s-1</div>
-      <div class="item-s-10">.item-s-10</div>
-      <div class="item-s-2">.item-s-2</div>
-      <div class="item-s-9">.item-s-9</div>
-      <div class="item-s-3">.item-s-3</div>
-      <div class="item-s-8">.item-s-8</div>
-      <div class="item-s-4">.item-s-4</div>
-      <div class="item-s-7">.item-s-7</div>
-      <div class="item-s-5">.item-s-5</div>
-      <div class="item-s-6">.item-s-6</div>
-      <div class="item-s-6">.item-s-6</div>
-    </div>
-    <section>
-    <div class="container flex">
-      <div class="item-xs-12">
-        <h2>Fluid width</h2>
-        <p>Use <code>.container-fluid</code> for full-width flex containers.</p>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Fluid width</h2>
+          <p>Use <code>.container-fluid</code> for full-width containers.</p>
+        </div>
       </div>
     </div>
-    <div class="container flex demo-style">
-      <div class="item-s-7">.item-s-7</div>
-      <div class="item-s-5">.item-s-5</div>
-      <div class="item-s-6">.item-s-6</div>
-      <div class="item-s-6">.item-s-6</div>
+    <div class="container-fluid">
+      <div class="row demo-style">
+        <div class="col-sm-7">.col-sm-7</div>
+        <div class="col-sm-5">.col-sm-5</div>
+        <div class="col-sm-6">.col-sm-6</div>
+        <div class="col-sm-6">.col-sm-6</div>
+      </div>
     </div>
-    </section>
-    <div class="container flex">
-      <div class="item-xs-12">
+  </section>
+  <section class="container">
+    <div class="row">
+      <div class="col-xs-12">
         <h2>You choose when your containers break to full width</h2>
-        <p>Resize your browser to see it work. Breakpoints are based on em instead of px so that they work nicely even if a user sets their baseline font size to larger than normal (cmd+ or ctrl+ ). Make your layout work for the user.</p>
+        <p>Resize your browser to see it work. Breakpoints are based on em instead of px so that they work nicely even if a user sets their baseline font size to larger or smaller than normal (cmd+ or ctrl+ ).</p>
         <p>Break at small:</p>
       </div>
     </div>
-    <div class="container flex demo-style">
-      <div class="item-s-3">.item-xs-3</div>
-      <div class="item-s-9">.item-xs-9</div>
-      <div class="item-xs-12 ">
+    <div class="row demo-style">
+      <div class="col-sm-3">.col-xs-3</div>
+      <div class="col-sm-9">.col-xs-9</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 ">
         <p>medium:</p>
       </div>
-      <div class="item-m-4">.item-m-4</div>
-      <div class="item-m-8">.item-m-8</div>
-      <div class="item-xs-12 ">
+    </div>
+    <div class="row demo-style">
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-8">.col-md-8</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 ">
         <p>large:</p>
       </div>
-      <div class="item-l-5">.item-l-5</div>
-      <div class="item-l-7">.item-l-7</div>
-      <div class="item-xs-12 ">
+    </div>
+    <div class="row demo-style">
+      <div class="col-lg-5">.col-lg-5</div>
+      <div class="col-lg-7">.col-lg-7</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 ">
         <p>XL:</p>
       </div>
+    </div>
+    <div class="row demo-style">
       <div class="item-xl-4">.item-xl-4</div>
       <div class="item-xl-4">.item-xl-4</div>
       <div class="item-xl-4">.item-xl-4</div>
-      <div class="item-xs-12 ">
+    </div>
+    <div class="row">
+      <div class="col-xs-12 ">
         <p>or never:</p>
       </div>
-      <div class="item-xs-6">.item-xs-6</div>
-      <div class="item-xs-6">.item-xs-6</div>
-      <div class="item-xs-12 ">
+    </div>
+    <div class="row demo-style">
+      <div class="col-xs-6">.col-xs-6</div>
+      <div class="col-xs-6">.col-xs-6</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 ">
         <p>You can also use multiple classes to define different layout at different sizes:</p>
       </div>
-      <div class="item-m-6 item-l-3 item-xl-6">.item-m-6 .item-l-3 .item-xl-6</div>
-      <div class="item-m-6 item-l-3 item-xl-6">.item-m-6 .item-l-3 .item-xl-6</div>
-      <div class="item-m-6 item-l-3 item-xl-3">.item-m-6 .item-l-3 .item-xl-3</div>
-      <div class="item-m-6 item-l-3 item-xl-9">.item-m-6 .item-l-3 .item-xl-9</div>
-      <div class="item-m-6">.item-m-6</div>
     </div>
-
-
-    <div class="container flex">
-      <div class="item-xs-12 ">
+    <div class="row demo-style">
+      <div class="col-md-6 col-lg-3 item-xl-6">.col-md-6 .col-lg-3 .item-xl-6</div>
+      <div class="col-md-6 col-lg-3 item-xl-6">.col-md-6 .col-lg-3 .item-xl-6</div>
+      <div class="col-md-6 col-lg-3 item-xl-3">.col-md-6 .col-lg-3 .item-xl-3</div>
+      <div class="col-md-6 col-lg-3 item-xl-9">.col-md-6 .col-lg-3 .item-xl-9</div>
+      <div class="col-md-6">.col-md-6</div>
+    </div>
+  </section>
+  <section class="container">
+    <div class="row">
+      <div class="col-xs-12 ">
         <h2>Want some gutters?</h2>
-        <p>Give your items a little breathing room. Add the <code>gutters</code> class to your flex container</p>
+        <p>Give your items a little breathing room. Add the <code>gutters</code> class to your row container</p>
       </div>
     </div>
-    <div class="container flex gutters demo-style">
-      <div class="item-m-4">.item-m-4</div>
-      <div class="item-m-4">.item-m-4</div>
-      <div class="item-m-4">.item-m-4</div>
+    <div class="row gutters demo-style">
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-4">.col-md-4</div>
     </div>
-
-    <div class="flex container">
-      <div class="item-xs-12 ">
+  </section>
+  <section class="container">
+    <div class="row">
+      <div class="col-xs-12 ">
         <h2>Bicep supports reordering</h2>
-        <p>By default, flex items are laid out in DOM order. You can change that with the order attribute.</p>
+        <p>By default, row items are laid out in DOM order. You can change that with the order attribute.</p>
         <p>Use the <code>.item-order-[breakpoint]-[order]</code> classes to rearrange the order that items appear.</p>
         <p>Inspect these items to see what orer. You'll also notice that they swap back to the DOM order under the medium breakpoint.</p>
       </div>
     </div>
-    <div class="container flex gutters demo-style">
-      <div class="item-s-4 item-order-m-2">.item-s-4.item-order-m-2</div>
-      <div class="item-s-5 item-order-m-3">.item-s-5.item-order-m-3</div>
-      <div class="item-s-3 item-order-m-1">.item-s-3.item-order-m-1</div>
+    <div class="row gutters demo-style">
+      <div class="col-sm-4 item-order-m-2">.col-sm-4.item-order-m-2</div>
+      <div class="col-sm-5 item-order-m-3">.col-sm-5.item-order-m-3</div>
+      <div class="col-sm-3 item-order-m-1">.col-sm-3.item-order-m-1</div>
     </div>
-
-    <div class="flex container">
-      <div class="item-xs-12 ">
+  </section>
+  <section class="container">
+    <div class="row">
+      <div class="col-xs-12 ">
         <h2>I hear flexbox is good for vertical centering...</h2>
       </div>
     </div>
-    <div class="container flex demo-style">
-      <div class="item-xs-12 flex container flex-center" style="min-height:400px;">
-        <div class="item-xs-6">
+    <div class="row demo-style">
+      <div class="col-xs-12 row container flex-center" style="min-height:400px;">
+        <div class="col-xs-6">
           <p>
             You heard right. Apply the <code>.flex-center</code> class to your <code>flex</code> element to center it's child items both vertically <i>and</i> horizontally.
           </p>
         </div>
       </div>
     </div>
+  </section>
+  <script src="prism.js"></script>
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-XXXXXXXX-Y']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+</body>
 
-
-    <script src="prism.js"></script>
-    <script type="text/javascript">
-     var _gaq = _gaq || [];
-     _gaq.push(['_setAccount', 'UA-XXXXXXXX-Y']);
-     _gaq.push(['_trackPageview']);
-     (function()
-     {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-     })();
-    </script>
-  </body>
 </html>
