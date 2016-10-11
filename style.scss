@@ -78,7 +78,6 @@ p {
   min-height:100px;
   word-wrap:break-word;
   
-  
   @media (min-width:490px){
     font-size:12px; 
   }
@@ -88,6 +87,28 @@ p {
   
   &.noborder{
     border:0 none;
+  }
+}
+
+.demo-style-2 > div{
+  height:100px;
+  color:$white;
+  font-size:3.0em;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  &:nth-child(1){
+    background:$aqua;
+  }
+  &:nth-child(2){
+    background:$teal;
+  }
+  &:nth-child(3){
+    background:$olive;
+  }
+  &:nth-child(4){
+    background:$green;
   }
 }
 

@@ -16,65 +16,30 @@
 </head>
 
 <body>
-  <section class="demo-section-hero container">
-    <div class="headerrow">
-      <div class="col-xs-12">
-        <h1>bicep - row your layout</h1>
-        <p>Lightweight responsive grid layout, written with flexbox.</p>
-      </div>
-    </div>
-  </section>
-  <section class="demo-section-standard container">
-    <div class="row flex-justify-center">
-      <div class="col-xs-12">
-        <h2>Standard</h2>
-        <p>Looks and behaves similar to float-based layouts. If you've used a float-based layout framework (like boostrap or foundation) this will feel very familiar.</p>
-      </div>
-    </div>
-    <div class="row demo-style">
-      <div class="col-md-3">.col-md-3</div>
-      <div class="col-md-6">.col-md-6</div>
-      <div class="col-md-3">.col-md-3</div>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="gradient-header">
-          Markup
-        </div>
-        <pre class="language-markup">
-            <code class="language-markup">
-                &lt;div class="row"&gt;
-                  &lt;div class="col-md-3"&gt;&lt;/div&gt;
-                  &lt;div class="col-md-6"&gt;&lt;/div&gt;
-                  &lt;div class="col-md-3"&gt;&lt;/div&gt;
-                &lt;/div&gt;
-            </code>
-            </pre>
-      </div>
-      <div class="col-xs-12">
-        <p>*Note that you can use <code>.container</code> and <code>.flex</code> independently of one another as needed. Neither depends on the other.</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="row">
+  <header>
+    <nav></nav>
+  </header>
+  <article>
+    <section class="demo-section-hero container">
+      <div class="headerrow">
         <div class="col-xs-12">
-          <h2>Fluid width</h2>
-          <p>Use <code>.container-fluid</code> for full-width containers.</p>
+          <h1>bicep - flex your layout</h1>
+          <p>Lightweight responsive grid layout, written with flexbox.</p>
         </div>
       </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row demo-style">
-        <div class="col-sm-7">.col-sm-7</div>
-        <div class="col-sm-5">.col-sm-5</div>
-        <div class="col-sm-6">.col-sm-6</div>
-        <div class="col-sm-6">.col-sm-6</div>
+    </section>
+    <section class="demo-section-standard container">
+      <div class="row flex-justify-center">
+        <div class="col-xs-12">
+          <h2>Standard</h2>
+          <p>Looks and behaves similar to float-based layouts. If you've used a float-based layout framework (like boostrap or foundation) this will feel very familiar.</p>
+        </div>
       </div>
-    </div>
-    <div class="container">
+      <div class="row demo-style">
+        <div class="col-md-3">.col-md-3</div>
+        <div class="col-md-6">.col-md-6</div>
+        <div class="col-md-3">.col-md-3</div>
+      </div>
       <div class="row">
         <div class="col-lg-12">
           <div class="gradient-header">
@@ -82,159 +47,282 @@
           </div>
           <pre class="language-markup">
               <code class="language-markup">
-                  &lt;div class="container-fluid"&gt;
-                    &lt;div class="row"&gt;
-                      ...
-                    &lt;/div&gt;
+                  &lt;div class="row"&gt;
+                    &lt;div class="col-md-3"&gt;&lt;/div&gt;
+                    &lt;div class="col-md-6"&gt;&lt;/div&gt;
+                    &lt;div class="col-md-3"&gt;&lt;/div&gt;
                   &lt;/div&gt;
               </code>
               </pre>
         </div>
-    </div>
-  </section>
-  <section class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <h2>You choose when your containers break to full width</h2>
-        <p>Resize your browser to see it work. Breakpoints are based on em instead of px so that they work nicely even if a user sets their baseline font size to larger or smaller than normal (cmd+ or ctrl+ ).</p>
-        <p>Break at small:</p>
-      </div>
-    </div>
-    <div class="row demo-style">
-      <div class="col-sm-3">.col-xs-3</div>
-      <div class="col-sm-9">.col-xs-9</div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 ">
-        <p>medium:</p>
-      </div>
-    </div>
-    <div class="row demo-style">
-      <div class="col-md-4">.col-md-4</div>
-      <div class="col-md-8">.col-md-8</div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 ">
-        <p>large:</p>
-      </div>
-    </div>
-    <div class="row demo-style">
-      <div class="col-lg-5">.col-lg-5</div>
-      <div class="col-lg-7">.col-lg-7</div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 ">
-        <p>XL:</p>
-      </div>
-    </div>
-    <div class="row demo-style">
-      <div class="item-xl-4">.item-xl-4</div>
-      <div class="item-xl-4">.item-xl-4</div>
-      <div class="item-xl-4">.item-xl-4</div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 ">
-        <p>or never:</p>
-      </div>
-    </div>
-    <div class="row demo-style">
-      <div class="col-xs-6">.col-xs-6</div>
-      <div class="col-xs-6">.col-xs-6</div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 ">
-        <p>You can also use multiple classes to define different layout at different sizes:</p>
-      </div>
-    </div>
-    <div class="row demo-style">
-      <div class="col-md-6 col-lg-3 item-xl-6">.col-md-6 .col-lg-3 .item-xl-6</div>
-      <div class="col-md-6 col-lg-3 item-xl-6">.col-md-6 .col-lg-3 .item-xl-6</div>
-      <div class="col-md-6 col-lg-3 item-xl-3">.col-md-6 .col-lg-3 .item-xl-3</div>
-      <div class="col-md-6 col-lg-3 item-xl-9">.col-md-6 .col-lg-3 .item-xl-9</div>
-      <div class="col-md-6">.col-md-6</div>
-    </div>
-  </section>
-  <section class="container">
-    <div class="row">
-      <div class="col-xs-12 ">
-        <h2>Want some gutters?</h2>
-        <p>Give your items a little breathing room. Add the <code>gutters</code> class to your row container</p>
-      </div>
-    </div>
-    <div class="row gutters demo-style">
-      <div class="col-md-4">.col-md-4</div>
-      <div class="col-md-4">.col-md-4</div>
-      <div class="col-md-4">.col-md-4</div>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="gradient-header">
-          Markup
-        </div>
-        <pre class="language-markup">
-            <code class="language-markup">
-                &lt;div class="row gutters"&gt;
-                  &lt;div class="col-md-4"&gt;&lt;/div&gt;
-                  &lt;div class="col-md-4"&gt;&lt;/div&gt;
-                  &lt;div class="col-md-4"&gt;&lt;/div&gt;
-                &lt;/div&gt;
-            </code>
-        </pre>
-      </div>
-  </section>
-  <section class="container">
-    <div class="row">
-      <div class="col-xs-12 ">
-        <h2>Bicep supports reordering</h2>
-        <p>By default, row items are laid out in DOM order. You can change that with the order attribute.</p>
-        <p>Use the <code>.item-order-[breakpoint]-[order]</code> classes to rearrange the order that items appear.</p>
-        <p></p>
-      </div>
-    </div>
-    <div class="row gutters demo-style">
-      <div class="col-sm-4 col-order-md-2">.col-sm-4.col-order-md-2</div>
-      <div class="col-sm-5 col-order-md-3">.col-sm-5.col-order-md-3</div>
-      <div class="col-sm-3 col-order-md-1">.col-sm-3.col-order-md-1</div>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="gradient-header">
-          Markup
-        </div>
-        <pre class="language-markup">
-            <code class="language-markup">
-                &lt;div class="row gutters"&gt;
-                  &lt;div class="col-sm-4 col-order-md-2"&gt;&lt;/div&gt;
-                  &lt;div class="col-sm-5 col-order-md-3"&gt;&lt;/div&gt;
-                  &lt;div class="col-sm-3 col-order-md-1"&gt;&lt;/div&gt;
-                &lt;/div&gt;
-            </code>
-            </pre>
-      </div>
-  </section>
-  <section class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <h2>Utility layout classes</h2>
-        <h3>Changing flex direction:</h3>
-        <p>Change the direction your layout flows with <code>.flex-row-reverse</code>, <code>.flex-column</code>, and <code>.flex-column-reverse</code>.</p>
-      </div>
-      <div class="col-xs-12">
-        <h3>Changing alignment:</h3>
-        <p><code>flex-align</code> is like <code>text-align</code> for your flex items. Flex items are aligned to "flex-start" (left, usually) by default.</p>
-        <p>Use the <code>.flex-align-center</code>, <code>.flex-align-end</code>, and <code>.flex-align-start</code> to swap easily between alignments.</p>
-      </div>
-    </div>
-    <div class="row demo-style">
-      <div class="col-xs-12 row container flex-center" style="min-height:400px;">
-        <div class="col-xs-6">
-          <p>
-            Apply the <code>.flex-center</code> class to your <code>.row</code> element to center it's child items both vertically <i>and</i> horizontally.
-          </p>
+        <div class="col-xs-12">
+          <p>*Note that you can use <code>.container</code> and <code>.flex</code> independently of one another as needed. Neither depends on the other.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>Fluid width</h2>
+            <p>Use <code>.container-fluid</code> for full-width containers.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row demo-style">
+          <div class="col-sm-7">.col-sm-7</div>
+          <div class="col-sm-5">.col-sm-5</div>
+          <div class="col-sm-6">.col-sm-6</div>
+          <div class="col-sm-6">.col-sm-6</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="gradient-header">
+              Markup
+            </div>
+            <pre class="language-markup">
+                <code class="language-markup">
+                    &lt;div class="container-fluid"&gt;
+                      &lt;div class="row"&gt;
+                        ...
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                </code>
+                </pre>
+          </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>You choose when your containers break to full width</h2>
+          <p>Resize your browser to see it work. Breakpoints are based on em instead of px so that they work nicely even if a user sets their baseline font size to larger or smaller than normal (cmd+ or ctrl+ ).</p>
+          <p>Break at small:</p>
+        </div>
+      </div>
+      <div class="row demo-style">
+        <div class="col-sm-3">.col-xs-3</div>
+        <div class="col-sm-9">.col-xs-9</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 ">
+          <p>medium:</p>
+        </div>
+      </div>
+      <div class="row demo-style">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-8">.col-md-8</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 ">
+          <p>large:</p>
+        </div>
+      </div>
+      <div class="row demo-style">
+        <div class="col-lg-5">.col-lg-5</div>
+        <div class="col-lg-7">.col-lg-7</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 ">
+          <p>XL:</p>
+        </div>
+      </div>
+      <div class="row demo-style">
+        <div class="item-xl-4">.item-xl-4</div>
+        <div class="item-xl-4">.item-xl-4</div>
+        <div class="item-xl-4">.item-xl-4</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 ">
+          <p>or never:</p>
+        </div>
+      </div>
+      <div class="row demo-style">
+        <div class="col-xs-6">.col-xs-6</div>
+        <div class="col-xs-6">.col-xs-6</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 ">
+          <p>You can also use multiple classes to define different layout at different sizes:</p>
+        </div>
+      </div>
+      <div class="row demo-style">
+        <div class="col-md-6 col-lg-3 item-xl-6">.col-md-6 .col-lg-3 .item-xl-6</div>
+        <div class="col-md-6 col-lg-3 item-xl-6">.col-md-6 .col-lg-3 .item-xl-6</div>
+        <div class="col-md-6 col-lg-3 item-xl-3">.col-md-6 .col-lg-3 .item-xl-3</div>
+        <div class="col-md-6 col-lg-3 item-xl-9">.col-md-6 .col-lg-3 .item-xl-9</div>
+        <div class="col-md-6">.col-md-6</div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="row">
+        <div class="col-xs-12 ">
+          <h2>Want some gutters?</h2>
+          <p>Give your items a little breathing room. Add the <code>gutters</code> class to your row container</p>
+        </div>
+      </div>
+      <div class="row gutters demo-style">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="gradient-header">
+            Markup
+          </div>
+          <pre class="language-markup">
+              <code class="language-markup">
+                  &lt;div class="row gutters"&gt;
+                    &lt;div class="col-md-4"&gt;&lt;/div&gt;
+                    &lt;div class="col-md-4"&gt;&lt;/div&gt;
+                    &lt;div class="col-md-4"&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+              </code>
+          </pre>
+        </div>
+    </section>
+    <section class="container">
+      <div class="row">
+        <div class="col-xs-12 ">
+          <h2>Bicep supports reordering</h2>
+          <p>By default, row items are laid out in DOM order. You can change that with the order attribute.</p>
+          <p>Use the <code>.item-order-[breakpoint]-[order]</code> classes to rearrange the order that items appear.</p>
+          <p></p>
+        </div>
+      </div>
+      <div class="row gutters demo-style">
+        <div class="col-sm-4 col-order-md-2">.col-sm-4.col-order-md-2</div>
+        <div class="col-sm-5 col-order-md-3">.col-sm-5.col-order-md-3</div>
+        <div class="col-sm-3 col-order-md-1">.col-sm-3.col-order-md-1</div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="gradient-header">
+            Markup
+          </div>
+          <pre class="language-markup">
+              <code class="language-markup">
+                  &lt;div class="row gutters"&gt;
+                    &lt;div class="col-sm-4 col-order-md-2"&gt;&lt;/div&gt;
+                    &lt;div class="col-sm-5 col-order-md-3"&gt;&lt;/div&gt;
+                    &lt;div class="col-sm-3 col-order-md-1"&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+              </code>
+          </pre>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Utility layout classes</h2>
+          <h3>Changing flex direction:</h3>
+          <p>Change the direction your layout flows with <code>.flex-row-reverse</code>, <code>.flex-column</code>, and <code>.flex-column-reverse</code>.</p>
+          <p><code>.flex-row-reverse</code></p>
+        </div>
+      </div>
+      <div class="row flex-row-reverse demo-style-2">
+        <div class="col-xs-3"><div>1</div></div>
+        <div class="col-xs-3"><div>2</div></div>
+        <div class="col-xs-3"><div>3</div></div>
+        <div class="col-xs-3"><div>4</div></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="gradient-header">
+            Markup
+          </div>
+          <pre class="language-markup">
+              <code class="language-markup">
+                  &lt;div class="row flex-row-reverse"&gt;
+                    &lt;div class="col-xs-3"&gt;&lt;/div&gt;
+                    &lt;div class="col-xs-3"&gt;&lt;/div&gt;
+                    &lt;div class="col-xs-3"&gt;&lt;/div&gt;
+                    &lt;div class="col-xs-3"&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+              </code>
+          </pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <p><code>.flex-column</code></p>
+        </div>
+      </div>
+      <div class="row flex-column demo-style-2">
+        <div class="col-xs-12"><div>1</div></div>
+        <div class="col-xs-12"><div>2</div></div>
+        <div class="col-xs-12"><div>3</div></div>
+        <div class="col-xs-12"><div>4</div></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="gradient-header">
+            Markup
+          </div>
+          <pre class="language-markup">
+              <code class="language-markup">
+                  &lt;div class="row flex-column"&gt;
+                    &lt;div class="col-xs-12"&gt;&lt;/div&gt;
+                    &lt;div class="col-xs-12"&gt;&lt;/div&gt;
+                    &lt;div class="col-xs-12"&gt;&lt;/div&gt;
+                    &lt;div class="col-xs-12"&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+              </code>
+          </pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <p><code>.flex-column-reverse</code></p>
+        </div>
+      </div>
+      <div class="row flex-column-reverse demo-style-2">
+        <div class="col-xs-12"><div>1</div></div>
+        <div class="col-xs-12"><div>2</div></div>
+        <div class="col-xs-12"><div>3</div></div>
+        <div class="col-xs-12"><div>4</div></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="gradient-header">
+            Markup
+          </div>
+          <pre class="language-markup">
+              <code class="language-markup">
+                  &lt;div class="row flex-column"&gt;
+                    &lt;div class="col-xs-12"&gt;&lt;/div&gt;
+                    &lt;div class="col-xs-12"&gt;&lt;/div&gt;
+                    &lt;div class="col-xs-12"&gt;&lt;/div&gt;
+                    &lt;div class="col-xs-12"&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+              </code>
+          </pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>Changing alignment:</h3>
+          <p><code>flex-align</code> is like <code>text-align</code> for your flex items. Flex items are aligned to "flex-start" (left, usually) by default.</p>
+          <p>Use the <code>.flex-align-center</code>, <code>.flex-align-end</code>, and <code>.flex-align-start</code> to swap easily between alignments.</p>
+        </div>
+      </div>
+      <div class="row demo-style">
+        <div class="col-xs-12 row container flex-center" style="min-height:400px;">
+          <div class="col-xs-6">
+            <p>
+              Apply the <code>.flex-center</code> class to your <code>.row</code> element to center it's child items both vertically <i>and</i> horizontally.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
   <script src="prism.js"></script>
   <script type="text/javascript">
   var _gaq = _gaq || [];
