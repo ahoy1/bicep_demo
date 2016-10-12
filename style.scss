@@ -16,6 +16,7 @@ $white:  #fff;
 $silver: #777;
 $gray:   #333;
 $black:  #000;
+$text:   #222;
 
 *{
   box-sizing:border-box;
@@ -24,8 +25,59 @@ $black:  #000;
 body {
   margin:0;
   font-family:Raleway, Helvetica, Arial, sans-serif;
-  color:$black;
+  color:$text;
   line-height:1.5em;
+  display:flex;
+  flex-direction:row-reverse;
+}
+
+nav{
+    flex-basis: 315px;
+    position: relative;
+
+  ul{
+    position:fixed;
+    margin:0;
+    padding:0;
+    right: 1em;
+    
+    li {
+      text-align: right;
+      list-style: none;
+      padding:3px 0;
+
+      a {
+        display:block;
+        font-size: 2.0em;
+        line-height: 1.2em;
+        text-decoration: none;
+        color: $text;
+
+        span{
+          border:3px solid transparent;
+        }
+      }
+
+      &:nth-child(1):hover a span{
+        border-bottom:3px solid $lime;
+      }
+      &:nth-child(2):hover a span{
+        border-bottom:3px solid $yellow;
+      }
+      &:nth-child(3):hover a span{
+        border-bottom:3px solid $orange;
+      }
+      &:nth-child(4):hover a span{
+        border-bottom:3px solid $red;
+      }
+          
+    }
+  }
+}
+
+article{
+  flex-basis:100%;
+  margin:0 1em;
 }
 
 h1, h2 {
@@ -55,6 +107,7 @@ h1{
 
 h2{
   font-size:1.75em;
+  margin-top:5em;
 }
 
 h3{
@@ -62,7 +115,7 @@ h3{
 }
 
 p, li {
-  font-size:18px;
+  font-size:1.2em;
   text-align:left;
 }
 
@@ -72,17 +125,17 @@ p {
 
 .demo-style > div{
   padding:10px;
-  font-size:18px;
+  font-size:1.0em;
   font-weight:bold;
   border:1px solid $yellow;
   min-height:100px;
   word-wrap:break-word;
   
   @media (min-width:490px){
-    font-size:12px; 
+    font-size:0.8em; 
   }
   @media (min-width:768px){
-    font-size:18px; 
+    font-size:1.0em; 
   }
   
   &.noborder{

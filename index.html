@@ -16,9 +16,14 @@
 </head>
 
 <body>
-  <header>
-    <nav></nav>
-  </header>
+  <nav>
+    <ul>
+      <li><a href=""><span>grid</span></a></li>
+      <li><a href=""><span>gutters</span></a></li>
+      <li><a href=""><span>reordering</span></a></li>
+      <li><a href=""><span>utlity classes</span></a></li>
+    </ul>
+  </nav>
   <article>
     <section class="demo-section-hero container">
       <div class="headerrow">
@@ -31,7 +36,7 @@
     <section class="demo-section-standard container">
       <div class="row flex-justify-center">
         <div class="col-xs-12">
-          <h2>Standard</h2>
+          <h2>The Grid</h2>
           <p>Looks and behaves similar to float-based layouts. If you've used a float-based layout framework (like boostrap or foundation) this will feel very familiar.</p>
         </div>
       </div>
@@ -61,41 +66,6 @@
       </div>
     </section>
 
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <h2>Fluid width</h2>
-            <p>Use <code>.container-fluid</code> for full-width containers.</p>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid">
-        <div class="row demo-style">
-          <div class="col-sm-7">.col-sm-7</div>
-          <div class="col-sm-5">.col-sm-5</div>
-          <div class="col-sm-6">.col-sm-6</div>
-          <div class="col-sm-6">.col-sm-6</div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="gradient-header">
-              Markup
-            </div>
-            <pre class="language-markup">
-                <code class="language-markup">
-                    &lt;div class="container-fluid"&gt;
-                      &lt;div class="row"&gt;
-                        ...
-                      &lt;/div&gt;
-                    &lt;/div&gt;
-                </code>
-                </pre>
-          </div>
-      </div>
-    </section>
     <section class="container">
       <div class="row">
         <div class="col-xs-12">
@@ -156,6 +126,41 @@
         <div class="col-md-6 col-lg-3 item-xl-3">.col-md-6 .col-lg-3 .item-xl-3</div>
         <div class="col-md-6 col-lg-3 item-xl-9">.col-md-6 .col-lg-3 .item-xl-9</div>
         <div class="col-md-6">.col-md-6</div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>Fluid width</h3>
+            <p>Use <code>.container-fluid</code> for full-width containers.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row demo-style">
+          <div class="col-sm-7">.col-sm-7</div>
+          <div class="col-sm-5">.col-sm-5</div>
+          <div class="col-sm-6">.col-sm-6</div>
+          <div class="col-sm-6">.col-sm-6</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="gradient-header">
+              Markup
+            </div>
+            <pre class="language-markup">
+                <code class="language-markup">
+                    &lt;div class="container-fluid"&gt;
+                      &lt;div class="row"&gt;
+                        ...
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                </code>
+                </pre>
+          </div>
       </div>
     </section>
     <section class="container">
