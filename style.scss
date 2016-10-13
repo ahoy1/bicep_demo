@@ -15,6 +15,7 @@ $purple:  #8D00FF;
 $white:  #fff;
 $silver: #777;
 $gray:   #333;
+$lightgray:  #CCC;
 $black:  #000;
 $text:   #222;
 
@@ -80,6 +81,10 @@ article{
   margin:0 1em;
 }
 
+section{
+
+}
+
 h1, h2 {
   //text-align:center;
 }
@@ -106,21 +111,37 @@ h1{
 }
 
 h2{
-  font-size:1.75em;
-  margin-top:5em;
+  font-size:2.0em;
+  margin:0 0 0 0;
+  padding: 1em 0 0 0;
+  border-top:1px solid $lightgray;
 }
 
 h3{
   font-size: 1.5em;
 }
 
-p, li {
+p, li, td, th {
   font-size:1.2em;
   text-align:left;
 }
 
 p {
   margin:20px 0;
+}
+
+table{
+  min-width:50%;
+
+  tr:nth-child(even){
+    color:$silver;
+  }
+
+  th {
+    font-weight:bold;
+    border-bottom:1px solid;
+    padding:0 0.5em 0 0;
+  }
 }
 
 .demo-style > div{
@@ -144,9 +165,9 @@ p {
 }
 
 .demo-style-2 > div{
-  height:100px;
+  height:80px;
   color:$white;
-  font-size:3.0em;
+  font-size:2.0em;
   display:flex;
   align-items:center;
   justify-content:center;
