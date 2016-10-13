@@ -82,7 +82,7 @@ article{
 }
 
 section{
-
+  padding-bottom:5em;
 }
 
 h1, h2 {
@@ -144,6 +144,24 @@ table{
   }
 }
 
+a.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size:1.2em;
+    color: $text;
+    padding: 10px 10px;
+    border: 3px solid $text;
+    font-weight: bold;
+    margin: 0 10px 0 0;
+    transition: all 0.05s ease;
+
+    &:hover, &:focus, &:active{
+      background-color:$orange;
+      border:3px solid $orange;
+      color:$white;
+    }
+}
+
 .demo-style > div{
   padding:10px;
   font-size:1.0em;
@@ -184,10 +202,6 @@ table{
   &:nth-child(4){
     background:$green;
   }
-}
-
-section {
-  margin-bottom:30px;
 }
 
 //small change to prism style
